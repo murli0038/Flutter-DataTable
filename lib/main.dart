@@ -42,6 +42,14 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
             DataCell(Text('Software Developer')),
             DataCell(Text('20')),
             DataCell(Text('Software ')),
+            DataCell(
+              IconButton(
+                onPressed: (){
+                  print(i);
+                },
+                icon: Icon(Icons.add),
+              )
+            ),
           ],
         ),
     ];
@@ -79,6 +87,12 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
               DataColumn(
                 label: Text(
                   'dedjbwe',
+                  style: TextStyle(fontStyle: FontStyle.italic),
+                ),
+              ),
+              DataColumn(
+                label: Text(
+                  'ACTION',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ),
