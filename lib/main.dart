@@ -49,6 +49,22 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
                 icon: Icon(Icons.add),
               )
             ),
+            DataCell(
+              TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  // onChanged: onChanged,
+                  style:  TextStyle(
+                      fontFamily: "Popmed",
+                      fontSize: 14
+                  ),
+                  decoration: InputDecoration(
+                    focusedBorder:OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.black26,),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(vertical: 5,horizontal: 5),
+                  )
+              ),
+            ),
           ],
         ),
     ];
@@ -92,6 +108,12 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
               DataColumn(
                 label: Text(
                   'ACTION',
+                  style: TextStyle(fontStyle: FontStyle.italic),
+                ),
+              ),
+              DataColumn(
+                label: Text(
+                  'TEXT FIELD',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ),
